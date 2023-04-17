@@ -6,7 +6,7 @@ from locators_for_tests import locators
 
 
 class TestAuthentication:
-    @pytest.fixture(scope="function")
+    @pytest.fixture()
     def chrome_driver(self, request):
         options = webdriver.ChromeOptions()
         options.add_argument('--headless')

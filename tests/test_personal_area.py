@@ -10,6 +10,7 @@ class TestAuthentication:
         driver = webdriver.Chrome(options=options)
         yield driver
         driver.quit()
+
     def test_to_enter_a_personal_area (self, chrome_driver):
         chrome_driver.get(locators["site"])
         chrome_driver.find_element(By.XPATH, locators["personal_area"]).click()

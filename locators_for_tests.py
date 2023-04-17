@@ -1,4 +1,4 @@
-locators ={
+class Locator:
     "name_placeholder": "//input[@name='name' and @type='text'][1]",
     "email_placeholder": "/html/body/div[1]/div/main/div/form/fieldset[2]/div/div/input",
     "button": "./html/body/div[1]/div/main/div/form/button",
