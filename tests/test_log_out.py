@@ -1,7 +1,5 @@
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from locators_for_tests import locators
-import pytest
 
 
 class TestAuthentication:
