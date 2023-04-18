@@ -1,4 +1,4 @@
-class MainPage:
+class MainPageLocators:
     # кнопка "личный кабинет"
     my_profile_button = '//*[@id="root"]/div/header/nav/a'
     bun_section = '//*[@id="root"]/div/main/section[1]/div[2]/h2[1]'
@@ -18,7 +18,7 @@ class ProfilePageLocators:
     logout_button = '//*[@id="root"]/div/main/div/nav/ul/li[3]/button'
 
 
-class ForgotPasswordPageLocators:
+class PasswordRecoveryPageLocators:
     login_button = '//*[@id="root"]/div/main/div/div/p/a'
 
 
