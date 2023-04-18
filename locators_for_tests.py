@@ -1,4 +1,7 @@
 class Locator:
+    # кнопка "личный кабинет"
+    personal_area = "//a[@href='/account']",
+    
     "name_placeholder": "//input[@name='name' and @type='text'][1]",
     "email_placeholder": "/html/body/div[1]/div/main/div/form/fieldset[2]/div/div/input",
     "button": "./html/body/div[1]/div/main/div/form/button",
@@ -6,7 +9,6 @@ class Locator:
     "register": "https://stellarburgers.nomoreparties.site/register",
     "login": "https://stellarburgers.nomoreparties.site/login",
     "site": "https://stellarburgers.nomoreparties.site/",
-    "personal_area": "//a[@href='/account']",
     "profile": "https://stellarburgers.nomoreparties.site/account/profile",
     "exit_button": ".//button[@class='Account_button__14Yp3 text text_type_main-medium text_color_inactive']",
     "image": "/html/body/div[1]/div/main/section[1]/div[2]/ul[1]/a[1]/img",

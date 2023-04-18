@@ -3,14 +3,6 @@ from locators_for_tests import locators
 
 
 class TestAuthentication:
-    @pytest.fixture(scope="function")
-    def chrome_driver(self, request):
-        options = webdriver.ChromeOptions()
-        options.add_argument('--headless')
-        driver = webdriver.Chrome(options=options)
-        yield driver
-        driver.quit()
-
     def test_log_out(self, chrome_driver):
         chrome_driver.get(locators["register"])
         chrome_driver.find_element(By.XPATH, locators["knopka"]).click()

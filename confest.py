@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 
 
-@pytest.fixture(scope="function")
+@pytest.fixture()
 def chrome_driver(request):
     options = webdriver.ChromeOptions()
     options.add_argument('--headless')

@@ -2,12 +2,6 @@ from selenium.webdriver.common.by import By
 from locators_for_tests import locators
 
 class TestRegistration:
-    @pytest.fixture(scope="class")
-    def chrome_driver(self):
-        driver = webdriver.Chrome()
-        yield driver
-        driver.quit()
-
     def test_successful_registration(self, chrome_driver):
         chrome_driver.get(locators["register"])
         chrome_driver.find_element(By.XPATH, locators["name_placeholder"]).send_keys('Alexandra')
